@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--日志输出-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--设置别名-->
+    <typeAliases>
+        <!--name:实体类所用的包名-->
+        <package name="com.ex20.bean"/>
+    </typeAliases>
+    <mappers>
+        <!--name:是包名 即这个包中的所有Mapper文件全部都可以加载-->
+        <package name="com.ex20.CRM.settings.dao"/>
+    </mappers>
+</configuration>

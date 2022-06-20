@@ -1,0 +1,14 @@
+package com.ex20.CRM.utils;
+
+/**
+ * @author RLN57
+ */
+public class ServiceFactory {
+	
+	public static Object getService(Object service){
+		
+		return new TransactionInvocationHandler(service).getProxy();
+		
+	}
+	
+}
